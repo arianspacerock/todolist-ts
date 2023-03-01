@@ -17,13 +17,15 @@ function App() {
 
     let [filter, setFilter] = useState<FilterValuesType>("all")
 
-     function removeTask  (id: string) {
-        let resultTasks = tasks.filter(t => t.id !== id)
+     const removeTask = (id: string) => {
+        let filteredTasks = tasks.filter(t => t.id !== id)
+         setTasks(filteredTasks)
     }
 
-    function addTask () {
-        let newTask = {id: v1(), title: "New Task", isDone: false}
+    const addTask = (title: string) => {
+        let newTask = {id: v1(), title: title, isDone: false}
         let newTasks = [newTask, ...tasks]
+        setTasks(newTasks)
     }
 
     const changeFilter = (value: FilterValuesType) => {
