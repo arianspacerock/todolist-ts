@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import {TaskType, Todolist} from './Todolist';
 import {v1} from 'uuid';
+import {AddItemForm} from "./components/AddItemForm";
 
 
 type AssocTaskType = {
@@ -78,9 +79,13 @@ function App() {
         delete tasks[todoListId]
     }
 
+    const addTodolist = (title: string) => {
+        const newTodolistId = v1();
+    }
 
     return (
         <div className="App">
+            <AddItemForm todolistId={"props.todoListId"} addTask={addTodolist}/>
             {todoLists.map(el => {
                 let tasksForTodolist = tasks[el.id];
                 if (el.filter === "active") {
