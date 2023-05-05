@@ -79,13 +79,14 @@ function App() {
         delete tasks[todoListId]
     }
 
-    const addTodolist = (title: string) => {
-        const newTodolistId = v1();
+    const addTodolist = (newTitle: string) => {
+        let newTodolistId = v1();
+        setTodoLists([{id: newTodolistId, title: newTitle, filter: "all"}, ...todoLists])
     }
 
     return (
         <div className="App">
-            <AddItemForm todolistId={"props.todoListId"} addTask={addTodolist}/>
+            <AddItemForm callBack={addTodolist}/>
             {todoLists.map(el => {
                 let tasksForTodolist = tasks[el.id];
                 if (el.filter === "active") {
