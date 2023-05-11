@@ -1,5 +1,5 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
-import {Button} from "@mui/material";
+import Button from "@mui/material/Button";
 
 type PropsType = {
     callBack: (newTitle: string) => void
@@ -26,10 +26,19 @@ export const AddItemForm = (props: PropsType) => {
 
     const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
         setError(null);
-        if (e.charCode === 13) {
+        if (e.key == 'Enter') {
             addTask();
         }
     }
+
+    const muiBtnStyle = {
+        maxWidth: '30px',
+        maxHeight: '30px',
+        minWidth: '30px',
+        minHeight: '30px',
+    }
+
+
 
     return (
         <div>
@@ -38,7 +47,7 @@ export const AddItemForm = (props: PropsType) => {
                    onKeyPress={onKeyPressHandler}
                    className={error ? "error" : ""}
             />
-            <Button variant="contained" onClick={addTask}>+</Button>
+            <Button variant="contained" onClick={addTask} style={muiBtnStyle}>+</Button>
             {error && <div className="error-message">{error}</div>}
         </div>
     );

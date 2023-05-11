@@ -1,8 +1,10 @@
-import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
+import React, {ChangeEvent} from 'react';
 import {FilterValuesType} from './App';
 import {AddItemForm} from "./components/AddItemForm";
 import {EditableSpan} from "./components/EditableSpan";
-import {Button} from "@mui/material";
+import DeleteIcon from '@mui/icons-material/Delete';
+import IconButton from "@mui/material/IconButton";
+import Button from "@mui/material/Button";
 
 export type TaskType = {
     id: string
@@ -48,7 +50,11 @@ export function Todolist(props: PropsType) {
     return <div>
         <h3>
             <EditableSpan oldTitle={props.title} callBack={updateTodolistTitleHandler}/>
-            <button onClick={removeTodolistHandler}>X</button>
+            {/*<button onClick={removeTodolistHandler}>X</button>*/}
+
+            <IconButton aria-label='delete' onClick={removeTodolistHandler}>
+                <DeleteIcon/>
+            </IconButton>
         </h3>
         <div>
             <AddItemForm callBack={addTaskHandler}/>
@@ -66,12 +72,17 @@ export function Todolist(props: PropsType) {
                                checked={t.isDone}/>
                         {/*<span>{t.title}</span>*/}
                         <EditableSpan callBack={(updateTitle)=>updateTaskHandler(t.id, updateTitle)} oldTitle={t.title}/>
-                        <button onClick={onClickHandler}>x</button>
+                        {/*<button onClick={onClickHandler}>x</button>*/}
+                        <IconButton aria-label='delete' onClick={onClickHandler}>
+                            <DeleteIcon/>
+                        </IconButton>
                     </li>
                 })
             }
         </ul>
         <div>
+            <Button variant="contained" color="success">Success</Button>
+
             <button className={props.filter === 'all' ? "active-filter" : ""}
                     onClick={onAllClickHandler}>All</button>
             <button className={props.filter === 'active' ? "active-filter" : ""}
