@@ -3,6 +3,8 @@ import './App.css';
 import {TaskType, Todolist} from './Todolist';
 import {v1} from 'uuid';
 import {AddItemForm} from "./components/AddItemForm";
+import Button from "@mui/material/Button";
+import ButtonAppBar from "./components/ButtonAppBar";
 
 
 type AssocTaskType = {
@@ -98,6 +100,7 @@ function App() {
 
     return (
         <div className="App">
+            <ButtonAppBar/>
             <AddItemForm callBack={addTodolist}/>
             {todoLists.map(el => {
                 let tasksForTodolist = tasks[el.id];
