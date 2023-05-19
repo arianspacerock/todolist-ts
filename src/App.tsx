@@ -15,7 +15,7 @@ type AssocTaskType = {
 
 export type FilterValuesType = "all" | "active" | "completed";
 
-type todoListsType = {
+export type todoListsType = {
     id: string
     title: string
     filter: FilterValuesType
