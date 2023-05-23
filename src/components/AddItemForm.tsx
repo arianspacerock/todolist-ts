@@ -27,7 +27,7 @@ export const AddItemForm = (props: PropsType) => {
 
     const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
         setError(null);
-        if (e.key == 'Enter') {
+        if (e.key === 'Enter') {
             addTask();
         }
     }
@@ -43,11 +43,6 @@ export const AddItemForm = (props: PropsType) => {
 
     return (
         <div>
-            {/*<input value={title}*/}
-            {/*       onChange={onChangeHandler}*/}
-            {/*       onKeyPress={onKeyPressHandler}*/}
-            {/*       className={error ? "error" : ""}*/}
-            {/*/>*/}
             <TextField value={title}
                        onChange={onChangeHandler}
                        onKeyDown={onKeyPressHandler}
@@ -58,7 +53,6 @@ export const AddItemForm = (props: PropsType) => {
                        error={!!error}
             />
             <Button variant="contained" onClick={addTask} style={muiBtnStyle}>+</Button>
-            {/*{error && <div className="error-message">{error}</div>}*/}
         </div>
     );
 };
