@@ -5,7 +5,7 @@ import {EditableSpan} from "./components/EditableSpan";
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
-import Checkbox from "@mui/material/Checkbox";
+import {SuperCheckBox} from "./components/SuperCheckBox";
 
 export type TaskType = {
     id: string
@@ -48,6 +48,10 @@ export function Todolist(props: PropsType) {
         props.updateTodolistTitle(props.id, updateTitle)
     }
 
+    const changeStatusHandler = (taskId: string, changeEvent: boolean) => {
+        props.changeTaskStatus(taskId, changeEvent, props.id)
+    }
+
     return <div>
         <h3>
             <EditableSpan oldTitle={props.title} callBack={updateTodolistTitleHandler}/>
@@ -64,14 +68,15 @@ export function Todolist(props: PropsType) {
             {
                 props.tasks.map(t => {
                     const onClickHandler = () => props.removeTask(props.id,t.id)
-                    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-                        props.changeTaskStatus(props.id, t.id, e.currentTarget.checked);
-                    }
+                    // const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+                    //     props.changeTaskStatus(props.id, t.id, e.currentTarget.checked);
+                    // }
                     return <li key={t.id} className={t.isDone ? "is-done" : ""}>
                         {/*<input type="checkbox"*/}
                         {/*       onChange={onChangeHandler}*/}
                         {/*       checked={t.isDone}/>*/}
-                        <Checkbox onChange={onChangeHandler} checked={t.isDone}/>
+                        {/*<Checkbox onChange={onChangeHandler} checked={t.isDone}/>*/}
+                        <SuperCheckBox callBack={(changeEvent)=>changeStatusHandler(t.id, changeEvent)} isDone={t.isDone} />
                         {/*<span>{t.title}</span>*/}
                         <EditableSpan callBack={(updateTitle)=>updateTaskHandler(t.id, updateTitle)} oldTitle={t.title}/>
                         {/*<button onClick={onClickHandler}>x</button>*/}
