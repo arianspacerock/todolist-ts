@@ -9,7 +9,7 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 
 
-type AssocTaskType = {
+export type AssocTaskType = {
     [key: string]: TaskType[]
 }
 
