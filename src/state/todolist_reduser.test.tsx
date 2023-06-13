@@ -8,11 +8,16 @@ import {
 } from "./todolist_reducer";
 import {FilterValuesType, todoListsType} from "../App";
 
-test ('correct todolist should be removed', () => {
-    let todolistId1 = v1();
-    let todolistId2 = v1();
+let todolistId1 = v1();
+let todolistId2 = v1();
 
-    const startState: todoListsType[] = [
+let startState: todoListsType[];
+
+test ('correct todolist should be removed', () => {
+    todolistId1 = v1();
+    todolistId2 = v1();
+
+    startState = [
         {id: todolistId1, title: "What to learn", filter: "all"},
         {id: todolistId2, title: "What to buy", filter: "all"},
     ]
@@ -42,7 +47,7 @@ test ('correct todolist should be added', () => {
     ]
 
     // const endState = todoListsReducer(startState, {type: 'ADD-TODOLIST', title: newTodolistTitle})
-    const endState = todoListsReducer(startState, addTodolistAC(newTodolistTitle, newTodolistId))
+    const endState = todoListsReducer(startState, addTodolistAC(newTodolistTitle))
 
     expect(endState.length).toBe(3)
     expect(endState[2].title).toBe(newTodolistTitle)
