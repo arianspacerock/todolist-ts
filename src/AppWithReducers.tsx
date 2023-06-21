@@ -57,57 +57,38 @@ function AppWithReducers() {
     });
 
     function removeTask(id: string, taskID: string) {
-        // setTasks({...tasks, [id]: tasks[id].filter(t => t.id !== taskID)});
         dispatchToTasks(removeTaskAC(taskID, id));
     }
 
     function addTask(todoListId: string, title: string) {
-        // let newTask = {id: v1(), title: title, isDone: false};
-        // setTasks({...tasks, [todoListId]: [newTask, ...tasks[todoListId]]});
         dispatchToTasks(addTaskAC(title, todoListId));
     }
 
     function changeStatus(todoListId: string, id: string, isDone: boolean) {
-        // setTasks({...tasks, [todoListId]: tasks[todoListId].map(t => t.id === id ? {...t, isDone: isDone} : t)});
         dispatchToTasks(changeTaskStatusAC(id, isDone, todoListId));
     }
 
     function changeFilter(value: FilterValuesType,todoListId: string) {
-        //setFilter(value);
-        // setTodoLists(todoLists.map(el =>
-        //     el.id === todoListId ? {...el, filter: value} : el))
         dispatchToTodoLists(changeTodolistFilterAC(todoListId, value));
     }
 
     const removeTodolist = (id: string) => {
-        // setTodoLists(todoLists.filter(el => el.id !== id))
-        // delete tasks[id]
-        // setTasks({...tasks})
         let action = removeTodolistAC(id);
         dispatchToTodoLists(action);
         dispatchToTasks(action);
     }
 
     const addTodolist = (newTitle: string) => {
-        // let newTodolistId = v1();
-        // setTodoLists([{id: newTodolistId, title: newTitle, filter: "all"}, ...todoLists])
-        // setTasks({...tasks, [newTodolistId]: []})
         let action = addTodolistAC(newTitle);
         dispatchToTodoLists(action);
         dispatchToTasks(action);
     }
 
     const updateTask = (todoListId: string, taskId: string, updateTitle: string) => {
-        // setTasks({
-        //     ...tasks, [todoListId]: tasks[todoListId].map(el =>
-        //         el.id === taskId ? {...el, title: updateTitle} : el)
-        // })
         dispatchToTasks(changeTitleTaskAC(updateTitle, taskId, todoListId));
     }
 
     const updateTodolistTitle = (todoListId: string, updateTitle: string) => {
-        // setTodoLists(todoLists.map(el =>
-        //     el.id === todoListId ? {...el, title: updateTitle} : el))
         dispatchToTodoLists(changeTodolistTitleAC(todoListId, updateTitle));
     }
 
@@ -151,7 +132,7 @@ function AppWithReducers() {
                 </Grid>
             </Container>
         </div>
-    );
+    )
 }
 
 export default AppWithReducers;
