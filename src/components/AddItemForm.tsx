@@ -1,4 +1,4 @@
-import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
+import React, {ChangeEvent, KeyboardEvent, memo, useState} from 'react';
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 
@@ -6,7 +6,7 @@ type PropsType = {
     callBack: (newTitle: string) => void
 }
 
-export const AddItemForm = (props: PropsType) => {
+export const AddItemForm = memo((props: PropsType) => {
 
     let [title, setTitle] = useState("")
     let [error, setError] = useState<string | null>(null)
@@ -39,8 +39,6 @@ export const AddItemForm = (props: PropsType) => {
         minHeight: '39px',
     }
 
-
-
     return (
         <div>
             <TextField value={title}
@@ -55,5 +53,5 @@ export const AddItemForm = (props: PropsType) => {
             <Button variant="contained" onClick={addTask} style={muiBtnStyle}>+</Button>
         </div>
     );
-};
+});
 

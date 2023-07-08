@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 import {FilterValuesType} from './App';
 import {AddItemForm} from "./components/AddItemForm";
 import {EditableSpan} from "./components/EditableSpan";
@@ -29,17 +29,17 @@ type PropsType = {
 
 export function Todolist(props: PropsType) {
 
-    const onAllClickHandler = () => props.changeFilter(props.id,"all");
-    const onActiveClickHandler = () => props.changeFilter(props.id,"active");
-    const onCompletedClickHandler = () => props.changeFilter(props.id,"completed");
+    const onAllClickHandler = () => props.changeFilter(props.id, "all");
+    const onActiveClickHandler = () => props.changeFilter(props.id, "active");
+    const onCompletedClickHandler = () => props.changeFilter(props.id, "completed");
 
     const removeTodolistHandler = () => {
         props.removeTodolist(props.id);
     }
 
-    const addTaskHandler = (newTitle: string) => {
+    const addTaskHandler = useCallback((newTitle: string) => {
         props.addTask(newTitle, props.id)
-    }
+    }, [])
 
     const updateTaskHandler = (taskId: string, updateTitle: string) => {
         props.updateTask(props.id, taskId, updateTitle)
@@ -49,7 +49,7 @@ export function Todolist(props: PropsType) {
     }
 
     const changeStatusHandler = (taskId: string, changeEvent: boolean) => {
-        props.changeTaskStatus(taskId, changeEvent, props.id)
+        props.changeTaskStatus(props.id, taskId, changeEvent)
     }
 
     return <div>

@@ -68,7 +68,7 @@ function AppWithReducers() {
         dispatchToTasks(changeTaskStatusAC(id, isDone, todoListId));
     }
 
-    function changeFilter(value: FilterValuesType,todoListId: string) {
+    function changeFilter(todoListId: string, value: FilterValuesType) {
         dispatchToTodoLists(changeTodolistFilterAC(todoListId, value));
     }
 
