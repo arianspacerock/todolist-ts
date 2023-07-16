@@ -4,7 +4,7 @@ import {AddItemForm} from "./components/AddItemForm";
 import {EditableSpan} from "./components/EditableSpan";
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from "@mui/material/IconButton";
-import Button from "@mui/material/Button";
+import Button, {ButtonProps} from "@mui/material/Button";
 import {SuperCheckBox} from "./components/SuperCheckBox";
 
 export type TaskType = {
@@ -48,9 +48,10 @@ export const Todolist = memo((props: PropsType) => {
     const updateTaskHandler = (taskId: string, updateTitle: string) => {
         props.updateTask(props.id, taskId, updateTitle)
     }
-    const updateTodolistTitleHandler = (updateTitle: string) => {
+
+    const updateTodolistTitleHandler = useCallback((updateTitle: string) => {
         props.updateTodolistTitle(props.id, updateTitle)
-    }
+    }, [props.updateTodolistTitle, props.id])
 
     const changeStatusHandler = (taskId: string, changeEvent: boolean) => {
         props.changeTaskStatus(props.id, taskId, changeEvent)
@@ -118,14 +119,14 @@ export const Todolist = memo((props: PropsType) => {
     </div>
 })
 
-type ButtonWithMemoPropsType = {
-    title: string
-    color: 'inherit' | "success" | "error" | "warning" | "info" | "primary" | "secondary"
-    variant: "outlined" | "contained" | "text"
-    onClick: () => void
-}
+// type ButtonWithMemoPropsType = {
+//     title: string
+//     color: 'inherit' | "success" | "error" | "warning" | "info" | "primary" | "secondary"
+//     variant: "outlined" | "contained" | "text"
+//     onClick: () => void
+// }
 
-const ButtonWithMemo = memo((props: ButtonWithMemoPropsType) => {
+const ButtonWithMemo = memo((props: ButtonProps) => {
     return <Button variant={props.variant}
                    color={props.color}
                    onClick={props.onClick}>{props.title}

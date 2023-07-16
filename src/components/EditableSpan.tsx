@@ -1,11 +1,11 @@
-import React, {ChangeEvent, useState} from 'react';
+import React, {ChangeEvent, memo, useState} from 'react';
 
 type PropsType = {
     oldTitle: string
     callBack: (updateTitle: string) => void
 }
 
-export const EditableSpan = (props: PropsType) => {
+export const EditableSpan = memo((props: PropsType) => {
 
     let [updateTitle, setUpdateTitle] = useState(props.oldTitle)
 
@@ -29,5 +29,5 @@ export const EditableSpan = (props: PropsType) => {
         ? <input onChange={onChangeHandler} value={updateTitle} onBlur={editHandler} autoFocus/>
         : <span onDoubleClick={editHandler}>{props.oldTitle}</span>
     );
-};
+})
 
