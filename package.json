@@ -26,10 +26,23 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "r",
+      "e",
+      "a",
+      "c",
+      "t",
+      "-",
+      "a",
+      "p",
+      "p",
+      "plugin:storybook/recommended"
+    ]
   },
   "browserslist": {
     "production": [
@@ -46,6 +59,20 @@
   "devDependencies": {
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.11.16",
-    "@mui/material": "^5.12.3"
+    "@mui/material": "^5.12.3",
+    "@storybook/addon-essentials": "7.1.0",
+    "@storybook/addon-interactions": "7.1.0",
+    "@storybook/addon-links": "7.1.0",
+    "@storybook/addon-onboarding": "1.0.7",
+    "@storybook/blocks": "7.1.0",
+    "@storybook/preset-create-react-app": "7.1.0",
+    "@storybook/react": "7.1.0",
+    "@storybook/react-webpack5": "7.1.0",
+    "@storybook/testing-library": "0.2.0",
+    "babel-plugin-named-exports-order": "0.0.2",
+    "eslint-plugin-storybook": "^0.6.12",
+    "prop-types": "15.8.1",
+    "storybook": "7.1.0",
+    "webpack": "5.88.2"
   }
 }
