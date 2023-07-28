@@ -42,7 +42,7 @@ const TaskWithHook: FC<TaskPropsType> = (args) => {
     const changeTaskStatus = () => {
         setTask({...task, isDone: !task.isDone})
     }
-    const changeTaskTitle = (title: string) => {
+    const changeTaskTitle = (taskId: string, title: string) => {
         setTask({...task, title: title})
     }
 
