@@ -1,10 +1,10 @@
-import {AssocTaskType} from "../App";
+import {TasksStateType} from "../App"
 import {v1} from "uuid";
 import {AddTodolistType, RemoveTodolistType} from "./todolist_reducer";
 
 
-const initialState: AssocTaskType = {}
-export const tasksReducer = (state = initialState, action: TodolistReducerActionType) : AssocTaskType => {
+const initialState: TasksStateType = {}
+export const tasksReducer = (state = initialState, action: TodolistReducerActionType) : TasksStateType => {
     switch (action.type) {
         case 'REMOVE-TASK': {
             return {
