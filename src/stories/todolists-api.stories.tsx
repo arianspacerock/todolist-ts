@@ -10,7 +10,7 @@ export const GetTodolists = () => {
     useEffect(() => {
         // здесь мы будем делать запрос и ответ закидывать в стейт.
         // который в виде строки будем отображать в div-ке
-        const promise = axios.get('https://social-network.samuraijs.com/api/1.1/todo-lists')
+        const promise = axios.get('https://social-network.samuraijs.com/api/1.1/todo-lists', {withCredentials: true})
         promise.then((response) => {
             setState(response.data)
         })
@@ -20,6 +20,7 @@ export const GetTodolists = () => {
 export const CreateTodolist = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
+        axios.post('https://social-network.samuraijs.com/api/1.1/todo-lists', {withCredentials: true})
     }, [])
 
     return <div>{JSON.stringify(state)}</div>
