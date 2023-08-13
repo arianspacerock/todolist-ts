@@ -20,7 +20,11 @@ export const GetTodolists = () => {
 export const CreateTodolist = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
-        axios.post('https://social-network.samuraijs.com/api/1.1/todo-lists', {withCredentials: true})
+        const title = 'New Todolist'
+        axios.post('https://social-network.samuraijs.com/api/1.1/todo-lists', {title}, {withCredentials: true})
+            .then((response) => {
+                setState(response.data)
+            })
     }, [])
 
     return <div>{JSON.stringify(state)}</div>
