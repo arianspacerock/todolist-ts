@@ -30,7 +30,7 @@ export const AddItemForm = React.memo(function (props: AddItemFormPropsType) {
         if (error !== null) {
             setError(null);
         }
-        if (e.key === 'Enter') {
+        if (e.charCode === 13) {
             addItem();
         }
     }
