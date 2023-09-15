@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c892cb3e-808c-42fd-882b-f54a1cdb6996" name="Changes" comment="ref: add useEffect &amp; get request" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2TYzlXtdeGyCmLIsr8VQcSGGAKV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ARTEM-PC/MyProjects/hws2-master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\ARTEM-PC\\MyProjects\\todolist-ts\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="npm.storybook">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="storybook" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.storybook" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c892cb3e-808c-42fd-882b-f54a1cdb6996" name="Changes" comment="" />
+      <created>1691234954976</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691234954976</updated>
+      <workItem from="1691234957054" duration="1096000" />
+      <workItem from="1691236112443" duration="340000" />
+      <workItem from="1691317464197" duration="1111000" />
+      <workItem from="1691465057933" duration="1239000" />
+      <workItem from="1691506802556" duration="2196000" />
+      <workItem from="1691511731584" duration="599000" />
+      <workItem from="1691551755866" duration="1934000" />
+      <workItem from="1691724228506" duration="50000" />
+      <workItem from="1691931710094" duration="1203000" />
+      <workItem from="1692243183948" duration="17000" />
+      <workItem from="1692243214682" duration="1644000" />
+      <workItem from="1692284292634" duration="1159000" />
+      <workItem from="1692454034642" duration="3248000" />
+      <workItem from="1692675548753" duration="1909000" />
+      <workItem from="1692719715993" duration="165000" />
+      <workItem from="1692977225796" duration="30000" />
+      <workItem from="1692977293742" duration="2341000" />
+      <workItem from="1693128503300" duration="76000" />
+      <workItem from="1693130344710" duration="1201000" />
+      <workItem from="1693598092791" duration="117000" />
+      <workItem from="1693913907047" duration="18000" />
+      <workItem from="1693913935248" duration="39000" />
+      <workItem from="1693914072521" duration="60000" />
+      <workItem from="1693914192929" duration="760000" />
+      <workItem from="1694099490144" duration="1785000" />
+      <workItem from="1694103293840" duration="36000" />
+      <workItem from="1694185197881" duration="1385000" />
+      <workItem from="1694622112721" duration="35000" />
+      <workItem from="1694790543393" duration="1402000" />
+    </task>
+    <task id="LOCAL-00001" summary="ref: remake all spa">
+      <option name="closed" value="true" />
+      <created>1691235467253</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691235467253</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ref: add axios, start add request from back">
+      <option name="closed" value="true" />
+      <created>1691511489896</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691511489896</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ref: add axios, start add request from back">
+      <option name="closed" value="true" />
+      <created>1691724242835</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691724242835</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ref: add axios, start add request from back">
+      <option name="closed" value="true" />
+      <created>1691933667117</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691933667117</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ref: add axios, start add request from back">
+      <option name="closed" value="true" />
+      <created>1692286633303</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692286633303</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ref: add todolist-api.ts">
+      <option name="closed" value="true" />
+      <created>1692458240321</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692458240321</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ref: add todolist-api.ts">
+      <option name="closed" value="true" />
+      <created>1692719862963</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1692719862963</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ref: add types for todolist-api.ts">
+      <option name="closed" value="true" />
+      <created>1692980067067</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692980067068</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ref: add redux-thunk">
+      <option name="closed" value="true" />
+      <created>1693914343225</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693914343225</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ref: add useEffect &amp; get request">
+      <option name="closed" value="true" />
+      <created>1694186575300</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694186575300</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ref: remake all spa" />
+    <MESSAGE value="ref: add axios, start add request from back" />
+    <MESSAGE value="ref: add todolist-api.ts" />
+    <MESSAGE value="ref: add types for todolist-api.ts" />
+    <MESSAGE value="ref: add redux-thunk" />
+    <MESSAGE value="ref: add useEffect &amp; get request" />
+    <option name="LAST_COMMIT_MESSAGE" value="ref: add useEffect &amp; get request" />
+  </component>
+</project>
