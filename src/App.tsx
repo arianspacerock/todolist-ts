@@ -24,12 +24,9 @@ import {  useSelector } from 'react-redux';
 import { AppRootStateType, useAppDispatch} from './state/store';
 import {TaskStatuses, TaskType} from './api/todolists-api'
 
-
 export type TasksStateType = {
     [key: string]: Array<TaskType>
 }
-
-
 function App() {
 
     const todolists = useSelector<AppRootStateType, Array<TodolistDomainType>>(state => state.todolists)

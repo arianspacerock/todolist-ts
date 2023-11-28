@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c892cb3e-808c-42fd-882b-f54a1cdb6996" name="Changes" comment="ref: add useEffect &amp; get request">
+    <list default="true" id="c892cb3e-808c-42fd-882b-f54a1cdb6996" name="Changes" comment="ref: add dispatch with Thunk, middleware, create ThunkCreator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/todolists-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +124,9 @@
       <workItem from="1695554969515" duration="74000" />
       <workItem from="1698943430577" duration="511000" />
       <workItem from="1700986670890" duration="31000" />
-      <workItem from="1700992319282" duration="4352000" />
+      <workItem from="1700992319282" duration="4964000" />
+      <workItem from="1701182216675" duration="14000" />
+      <workItem from="1701182241831" duration="2402000" />
     </task>
     <task id="LOCAL-00001" summary="ref: remake all spa">
       <option name="closed" value="true" />
@@ -215,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694792407415</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ref: add dispatch with Thunk, middleware, create ThunkCreator">
+      <option name="closed" value="true" />
+      <created>1701005359851</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1701005359851</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +237,7 @@
     <MESSAGE value="ref: add types for todolist-api.ts" />
     <MESSAGE value="ref: add redux-thunk" />
     <MESSAGE value="ref: add useEffect &amp; get request" />
-    <option name="LAST_COMMIT_MESSAGE" value="ref: add useEffect &amp; get request" />
+    <MESSAGE value="ref: add dispatch with Thunk, middleware, create ThunkCreator" />
+    <option name="LAST_COMMIT_MESSAGE" value="ref: add dispatch with Thunk, middleware, create ThunkCreator" />
   </component>
 </project>
