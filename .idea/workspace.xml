@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c892cb3e-808c-42fd-882b-f54a1cdb6996" name="Changes" comment="ref: add dispatch with Thunk, middleware, create ThunkCreator">
+    <list default="true" id="c892cb3e-808c-42fd-882b-f54a1cdb6996" name="Changes" comment="ref: add set &amp; get Tasks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/unit.test.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,10 @@
       <workItem from="1700986670890" duration="31000" />
       <workItem from="1700992319282" duration="4964000" />
       <workItem from="1701182216675" duration="14000" />
-      <workItem from="1701182241831" duration="2402000" />
+      <workItem from="1701182241831" duration="2744000" />
+      <workItem from="1701186859819" duration="1198000" />
+      <workItem from="1701788382197" duration="1209000" />
+      <workItem from="1701874775728" duration="1297000" />
     </task>
     <task id="LOCAL-00001" summary="ref: remake all spa">
       <option name="closed" value="true" />
@@ -224,7 +227,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701005359851</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ref: add set &amp; get Tasks">
+      <option name="closed" value="true" />
+      <created>1701186435632</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1701186435632</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +249,7 @@
     <MESSAGE value="ref: add redux-thunk" />
     <MESSAGE value="ref: add useEffect &amp; get request" />
     <MESSAGE value="ref: add dispatch with Thunk, middleware, create ThunkCreator" />
-    <option name="LAST_COMMIT_MESSAGE" value="ref: add dispatch with Thunk, middleware, create ThunkCreator" />
+    <MESSAGE value="ref: add set &amp; get Tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="ref: add set &amp; get Tasks" />
   </component>
 </project>
